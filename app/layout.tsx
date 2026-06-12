@@ -139,11 +139,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
+     <body className="font-sans antialiased">
+  <Navbar />
+  <main>{children}</main>
+  <div className="mt-0">    {/* ← mt-16 = 64px gap */}
+    <Footer />
+  </div>
+</body>
     </html>
   )
 }
