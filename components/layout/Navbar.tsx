@@ -26,7 +26,7 @@ const NAV_LINKS = [
 
 function AuspreLogo({ dark = false }: { dark?: boolean }) {
   return (
-    <Link href="/" className="flex items-center group flex-shrink-0" aria-label="Auspre — Igniting Possibilities">
+    <Link href="/" className="flex items-center group flex-shrink-0 mt-4" aria-label="Auspre — Igniting Possibilities">
       <Image
         src="/images/main-logo.png"
         alt="Auspre — Igniting Possibilities"
