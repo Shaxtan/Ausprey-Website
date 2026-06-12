@@ -57,8 +57,7 @@ export default function ServicesSection() {
       <div className="container-max">
         <SectionHeader
           label="Our Expertise"
-          title="Comprehensive IoT &"
-          highlightedTitle="Software Services"
+          title="Comprehensive IoT & Software Services"
           subtitle="From embedded firmware to cloud-scale platforms, Auspre delivers end-to-end solutions that power the connected world."
         />
 
@@ -105,7 +104,7 @@ export default function ServicesSection() {
               {/* Content */}
               <div className="flex flex-col gap-3 flex-1">
                 <h3
-                  className="text-lg font-bold leading-snug text-dark group-hover:text-primary transition-colors duration-300"
+                  className="text-lg font-normal leading-snug text-dark group-hover:text-primary transition-colors duration-300"
                 >
                   {service.title}
                 </h3>

@@ -13,7 +13,6 @@ import {
   mobileMenu,
   mobileMenuItem,
 } from '@/lib/animations'
-import mainlogo from '../../public/images/main-logo.png'
 
 const NAV_LINKS = [
   { label: 'Home',         href: '/' },
@@ -25,13 +24,13 @@ const NAV_LINKS = [
   { label: 'Contact Us',   href: '/contact' },
 ]
 
-/* Uses your real logo image (gold "au" / red "spre" + eagle + tagline). */
 function AuspreLogo({ dark = false }: { dark?: boolean }) {
   return (
     <Link href="/" className="flex items-center group flex-shrink-0" aria-label="Auspre — Igniting Possibilities">
       <Image
-        src={mainlogo}
+        src="/images/main-logo.png"
         alt="Auspre — Igniting Possibilities"
+        width={160}
         height={52}
         priority
         className={`transition-all duration-300 group-hover:scale-105 ${dark ? 'brightness-0 invert' : ''}`}
@@ -40,7 +39,6 @@ function AuspreLogo({ dark = false }: { dark?: boolean }) {
   )
 }
 
-/* Solid gold "Let's Talk" CTA — matches the reference (filled gold, 8px radius). */
 const goldCtaBase: React.CSSProperties = {
   background: 'var(--color-gold)',
   color: '#fff',
@@ -93,12 +91,10 @@ export default function Navbar() {
         }`}
       >
         <div className="container-max flex items-center justify-between h-[76px]">
-          {/* Brand */}
           <motion.div variants={navItem}>
             <AuspreLogo />
           </motion.div>
 
-          {/* Desktop Nav */}
           <motion.nav
             variants={staggerContainer(0.07)}
             aria-label="Main navigation"
@@ -116,12 +112,10 @@ export default function Navbar() {
             ))}
           </motion.nav>
 
-          {/* CTA Button */}
           <motion.div variants={navItem} className="hidden lg:block">
             <LetsTalk />
           </motion.div>
 
-          {/* Mobile Hamburger */}
           <motion.button
             variants={navItem}
             className="lg:hidden p-2 rounded-lg text-dark hover:bg-gray-100 transition-colors"
@@ -143,7 +137,6 @@ export default function Navbar() {
         </div>
       </motion.header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div
@@ -153,7 +146,6 @@ export default function Navbar() {
             exit="exit"
             className="fixed inset-0 z-40 bg-white flex flex-col pt-24 px-8 overflow-hidden"
           >
-            {/* Mobile brand */}
             <div className="absolute top-5 left-8">
               <AuspreLogo />
             </div>
@@ -182,7 +174,6 @@ export default function Navbar() {
               <LetsTalk onClick={() => setMenuOpen(false)} />
             </motion.div>
 
-            {/* Decorative blobs */}
             <div
               className="absolute bottom-0 right-0 w-56 h-56 rounded-tl-full opacity-[0.06]"
               style={{ background: 'var(--color-primary)' }}

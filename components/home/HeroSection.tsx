@@ -13,8 +13,6 @@ const FEATURES = [
   { icon: ShieldCheck, category: 'SCALABLE',       label: ['SECURE', '& RELIABLE'] },
 ]
 
-/* The curved seam shared by the photo clip-path and the swoosh.
-   Clip path uses 0–1 (objectBoundingBox); the swoosh SVG uses the same curve at 0–100. */
 const PHOTO_CLIP =
   'M 0.24 0 L 1 0 L 1 1 L 0.18 1 C 0.14 0.84, 0.08 0.62, 0.06 0.45 C 0.04 0.30, 0.10 0.14, 0.24 0 Z'
 
@@ -59,7 +57,6 @@ export default function HeroSection() {
       className="relative min-h-screen flex items-center pt-[76px] overflow-hidden noise"
       style={{ background: 'linear-gradient(160deg, #FFFFFF 0%, #FAF6F2 55%, #F3EBE5 100%)' }}
     >
-      {/* clip-path definition for the curved photo edge */}
       <svg width="0" height="0" aria-hidden="true" className="absolute">
         <defs>
           <clipPath id="heroPhotoClip" clipPathUnits="objectBoundingBox">
@@ -68,13 +65,12 @@ export default function HeroSection() {
         </defs>
       </svg>
 
-      {/* Ambient glow — bottom left */}
       <div
         className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
         style={{ background: 'radial-gradient(circle at 30% 80%, rgba(201,154,83,0.07) 0%, transparent 65%)' }}
       />
 
-      {/* ── DESKTOP VISUAL: photo clipped to a curved edge + swoosh tracing the curve ── */}
+      {/* Desktop visual */}
       <div className="hidden lg:block absolute top-0 right-0 h-full w-[54%] z-0">
         <div className="absolute inset-0" style={{ clipPath: 'url(#heroPhotoClip)' }}>
           <Image
@@ -82,6 +78,7 @@ export default function HeroSection() {
             alt="Auspre IoT – custom software and IoT solutions"
             fill
             priority
+            sizes="54vw"
             className="object-cover object-center"
           />
           <div
@@ -90,7 +87,6 @@ export default function HeroSection() {
           />
         </div>
 
-        {/* Swoosh — same curve as the clip, constant-width stroke */}
         <svg
           className="absolute inset-0 w-full h-full pointer-events-none overflow-visible"
           viewBox="0 0 100 100"
@@ -119,23 +115,20 @@ export default function HeroSection() {
 
       <div className="container-max w-full relative z-10">
         <div className="lg:w-[50%] lg:pr-6">
-          {/* ── LEFT CONTENT ── */}
           <motion.div
             variants={staggerContainer(0.1)}
             initial="hidden"
             animate="visible"
             className="flex flex-col gap-6 py-16"
           >
-            {/* Eyebrow */}
             <motion.span variants={heroItem} className="section-label">
               Innovate. Build. Transform.
             </motion.span>
 
-            {/* H1 — 3 lines, 3 colors, Poppins. Sized to keep each phrase on one line. */}
             <motion.h1
               variants={heroItem}
               className="flex flex-col uppercase leading-[1.04] tracking-[-0.02em]"
-              style={{ fontFamily: 'var(--font-poppins)' }}
+              style={{ fontFamily: 'var(--font-barlow)' }}
             >
               <span style={{ fontSize: 'clamp(26px, 2.9vw, 38px)', fontWeight: 800, color: 'var(--color-dark)' }}>
                 Specialize in Delivering
@@ -148,20 +141,17 @@ export default function HeroSection() {
               </span>
             </motion.h1>
 
-            {/* Divider — 3 bars (gold · red · gold) */}
             <motion.div variants={heroItem} className="flex items-center gap-2" aria-hidden="true">
               <span style={{ display: 'block', width: '60px', height: '3px', borderRadius: '2px', background: 'var(--color-gold)' }} />
               <span style={{ display: 'block', width: '60px', height: '3px', borderRadius: '2px', background: 'var(--color-primary)' }} />
               <span style={{ display: 'block', width: '60px', height: '3px', borderRadius: '2px', background: 'var(--color-gold)' }} />
             </motion.div>
 
-            {/* Body */}
             <motion.p variants={heroItem} className="text-base leading-[1.75] max-w-[460px]" style={{ color: 'var(--color-gray-text)' }}>
               We partner with businesses to build scalable, secure, and future-ready
               software solutions that drive growth and create lasting impact.
             </motion.p>
 
-            {/* Feature row — gold ring, red icon, dark title, red sub */}
             <motion.div variants={staggerContainer(0.08)} className="grid grid-cols-4 gap-3 pt-1">
               {FEATURES.map(({ icon: Icon, category, label }, i) => (
                 <motion.div
@@ -200,9 +190,7 @@ export default function HeroSection() {
               ))}
             </motion.div>
 
-            {/* CTAs */}
             <motion.div variants={heroItem} className="flex flex-wrap items-center gap-5 pt-2">
-              {/* Explore — soft 12px rectangle, red gradient */}
               <motion.div whileHover={btnHover} whileTap={btnTap}>
                 <Link
                   href="/services"
@@ -220,7 +208,6 @@ export default function HeroSection() {
                 </Link>
               </motion.div>
 
-              {/* Watch — outline play ring */}
               <motion.button
                 whileHover={btnHover}
                 whileTap={btnTap}
@@ -235,13 +222,14 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* ── MOBILE / TABLET VISUAL: simple rounded photo ── */}
+          {/* Mobile visual */}
           <div className="lg:hidden relative aspect-[4/3] rounded-2xl overflow-hidden mt-4 mb-8 shadow-[0_24px_64px_rgba(0,0,0,0.12)]">
             <Image
               src="/images/hero-laptop.jpg"
               alt="Auspre IoT – custom software and IoT solutions"
               fill
               priority
+              sizes="100vw"
               className="object-cover object-center"
             />
             <div
