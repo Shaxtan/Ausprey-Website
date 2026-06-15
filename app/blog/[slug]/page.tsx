@@ -15,7 +15,7 @@ const POSTS: Record<string, { title: string; description: string; date: string; 
     title: 'Building a Real-Time IoT Dashboard with Next.js',
     description: 'Step-by-step guide to building a real-time IoT sensor dashboard with Next.js 14.',
     date: 'Apr 2024',
-    body: 'Real-time dashboards are at the heart of most IoT applications. In this guide, we'll build a full-stack IoT dashboard using Next.js 14 App Router, WebSocket connections, and a clean component architecture...',
+    body: "Real-time dashboards are at the heart of most IoT applications. In this guide, we'll build a full-stack IoT dashboard using Next.js 14 App Router, WebSocket connections, and a clean component architecture...",
   },
   'esp32-freertos-deep-dive': {
     title: 'ESP32 + FreeRTOS: Task Management Deep Dive',
