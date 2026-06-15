@@ -1,12 +1,18 @@
 import type { Metadata } from 'next'
-import { Poppins, Playfair_Display, DM_Sans, JetBrains_Mono, Barlow_Condensed } from 'next/font/google'
+import { Outfit, Poppins, Playfair_Display, DM_Sans, JetBrains_Mono, Barlow_Condensed } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import { organizationSchema, websiteSchema } from '@/lib/schema'
 
-// Headline font used across the hero/stats to match the reference look.
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+  weight: ['300', '400', '600', '700'],
+})
+
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
@@ -116,7 +122,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${playfair.variable} ${dmSans.variable} ${jetbrainsMono.variable} ${barlowCondensed.variable}`}
+      className={`${outfit.variable} ${poppins.variable} ${playfair.variable} ${dmSans.variable} ${jetbrainsMono.variable} ${barlowCondensed.variable}`}
     >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -133,11 +139,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
+     <body className="font-sans antialiased">
+  <Navbar />
+  <main>{children}</main>
+  <div className="mt-0">    {/* ← mt-16 = 64px gap */}
+    <Footer />
+  </div>
+</body>
     </html>
   )
 }

@@ -40,8 +40,8 @@ export default function SectionHeader({
 
       <motion.h2
         variants={fadeUp}
-        className={`text-4xl md:text-5xl font-black uppercase leading-tight tracking-tight ${dark ? 'text-white' : 'text-dark'}`}
-        style={{ fontFamily: 'var(--font-hero)' }}
+        className={`text-4xl md:text-5xl font-semibold uppercase leading-tight tracking-tight ${dark ? 'text-white' : 'text-dark'}`}
+        style={{ fontFamily: 'var(--font-outfit)' }}
       >
         {title}{' '}
         {highlightedTitle && (
