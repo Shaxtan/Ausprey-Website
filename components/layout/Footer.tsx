@@ -27,9 +27,10 @@ const SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white" role="contentinfo">
-      <div className="container-max py-20">
+    <footer className="bg-[#111111] text-white " role="contentinfo">
+<div className="container-max !pt-20 !pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
           {/* Col 1: Branding */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-3 group w-fit">
@@ -58,17 +59,15 @@ export default function Footer() {
               We build scalable, secure, and future-ready IoT and software solutions that drive real business growth.
             </p>
 
-            {/* Social icons */}
             <div className="flex items-center gap-4">
               {SOCIAL.map(({ icon: Icon, href, label }) => (
-                <a
+  <a
                   key={label}
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-400 hover:text-gold-light hover:bg-white/20 transition-all duration-200 hover:scale-110"
-                  style={{ '--hover-color': 'var(--color-gold-light)' } as React.CSSProperties}
+                  className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-gray-400 hover:bg-white/20 transition-all duration-200 hover:scale-110"
                 >
                   <Icon size={16} />
                 </a>
@@ -78,7 +77,7 @@ export default function Footer() {
 
           {/* Col 2: Services */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
               Services
             </h3>
             <ul className="space-y-3">
@@ -98,7 +97,7 @@ export default function Footer() {
 
           {/* Col 3: Company */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
               Company
             </h3>
             <ul className="space-y-3">
@@ -123,31 +122,30 @@ export default function Footer() {
 
           {/* Col 4: Contact */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
               Contact
             </h3>
             <address className="not-italic space-y-4">
               <a
-                href="mailto:hello@auspreiot.com"
+                href="ausprey@iot.com"
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors group"
-              >
+            >
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                hello@auspreiot.com
+                ausprey@iot.com
               </a>
               <a
                 href="tel:+1xxxxxxxxxx"
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors"
               >
                 <Phone size={16} className="text-primary flex-shrink-0" />
-                +1 (xxx) xxx-xxxx
+                +91 97580 57500
               </a>
               <p className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
-                City, Country
+                Gurgaon, India
               </p>
             </address>
 
-            {/* Newsletter */}
             <div className="mt-6">
               <p className="text-gray-400 text-sm mb-3">Stay updated</p>
               <div className="flex gap-2">
@@ -166,6 +164,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 

@@ -14,7 +14,7 @@ const STATS = [
 
 export default function StatsBar() {
   return (
-    <section id="stats" className="relative z-20 -mt-10 lg:-mt-[70px] pb-0">
+<section id="stats" className="relative z-20 -mt-8 lg:-mt-12 pb-0" style={{ background: 'var(--color-surface-warm)' }}>
       <div className="container-max">
         <motion.div
           variants={staggerContainer(0.1)}

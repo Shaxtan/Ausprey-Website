@@ -53,7 +53,7 @@ const SERVICES = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="section-padding" style={{ background: 'var(--color-surface-warm)' }}>
+<section id="services" className="section-padding !pt-12" style={{ background: 'var(--color-surface-warm)' }}>
       <div className="container-max">
         <SectionHeader
           label="Our Expertise"

@@ -93,9 +93,9 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="space-y-6">
             {[
-              { icon: Mail, title: 'Email Us', value: 'hello@auspreiot.com', href: 'mailto:hello@auspreiot.com' },
-              { icon: Phone, title: 'Call Us', value: '+1 (xxx) xxx-xxxx', href: 'tel:+1xxxxxxxxxx' },
-              { icon: MapPin, title: 'Visit Us', value: 'City, Country', href: '#' },
+              { icon: Mail, title: 'Email Us', value: 'ausprey@iot.com', href: 'mailto:hello@auspreiot.com' },
+              { icon: Phone, title: 'Call Us', value: '+91 97580 57500', href: 'tel:+1xxxxxxxxxx' },
+              { icon: MapPin, title: 'Visit Us', value: 'Gurgaon, India', href: '#' },
               { icon: Clock, title: 'Response Time', value: 'Within 24 hours', href: null },
             ].map(({ icon: Icon, title, value, href }) => (
               <div key={title} className="flex items-start gap-4 bg-white rounded-card p-6 shadow-card border border-gray-light">
