@@ -75,7 +75,7 @@ export default function HeroSection() {
         <div className="absolute inset-0" style={{ clipPath: 'url(#heroPhotoClip)' }}>
           <Image
             src="/images/hero-laptop.jpg"
-            alt="Auspre IoT – custom software and IoT solutions"
+            alt="Ausprey IoT – custom software and IoT solutions"
             fill
             priority
             sizes="54vw"
@@ -87,24 +87,24 @@ export default function HeroSection() {
           />
         </div>
 
+        {/* Swoosh — red taper on the photo edge + a thin gold line running PARALLEL just outside it */}
         <svg
           className="absolute inset-0 w-full h-full pointer-events-none overflow-visible"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          fill="none"
           aria-hidden="true"
         >
+          {/* red — slim at the top, widening toward the bottom */}
           <path
-            d="M 24 0 C 10 14, 4 30, 6 45 C 8 62, 14 84, 18 100"
-            stroke="var(--color-primary)"
-            strokeWidth="18"
-            strokeLinecap="round"
-            vectorEffect="non-scaling-stroke"
+            d="M 24 0 C 10 14, 4 30, 6 45 C 8 62, 14 84, 18 100 L 13 100 C 10 84, 6.5 62, 5 45 C 3.5 30, 9.5 14, 23.5 0 Z"
+            fill="var(--color-primary)"
           />
+          {/* gold — thin uniform line, parallel offset of the red's outer edge */}
           <path
-            d="M 20 0 C 6 14, 0 30, 2 45 C 4 62, 10 84, 14 100"
+            d="M 22.7 0 C 8.7 14, 2.7 30, 4.2 45 C 5.7 62, 9.2 84, 12.2 100"
+            fill="none"
             stroke="var(--color-gold-light)"
-            strokeWidth="6"
+            strokeWidth="2.5"
             strokeLinecap="round"
             vectorEffect="non-scaling-stroke"
           />
@@ -226,7 +226,7 @@ export default function HeroSection() {
           <div className="lg:hidden relative aspect-[4/3] rounded-2xl overflow-hidden mt-4 mb-8 shadow-[0_24px_64px_rgba(0,0,0,0.12)]">
             <Image
               src="/images/hero-laptop.jpg"
-              alt="Auspre IoT – custom software and IoT solutions"
+              alt="Ausprey IoT – custom software and IoT solutions"
               fill
               priority
               sizes="100vw"

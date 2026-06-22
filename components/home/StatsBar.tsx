@@ -6,9 +6,9 @@ import AnimatedCounter from '@/components/shared/AnimatedCounter'
 import { staggerContainer, fadeUp, viewportOnce } from '@/lib/animations'
 
 const STATS = [
-  { icon: Users,     value: 100,  suffix: '+', label: 'Happy Clients' },
-  { icon: FileCheck, value: 250,  suffix: '+', label: 'Projects Delivered' },
-  { icon: Briefcase, value: 50,   suffix: '+', label: 'Skilled Professionals' },
+  { icon: Users,     value: 20,  suffix: '+', label: 'Happy Clients' },
+  { icon: FileCheck, value: 30,  suffix: '+', label: 'Projects Delivered' },
+  { icon: Briefcase, value: 10,   suffix: '+', label: 'Skilled Professionals' },
   { icon: Globe,     value: null, suffix: '',  label: 'Global Clientele', isGlobal: true },
 ]
 

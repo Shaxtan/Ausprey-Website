@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 
 export const metadata: Metadata = buildMeta({
-  title: "Careers — Join Auspre IoT's Engineering Team",
+  title: "Careers — Join Ausprey IoT's Engineering Team",
   description:
-    "We're hiring! Join Auspre IoT's growing team of IoT engineers, software developers, and embedded systems experts. View open roles and apply today.",
+    "We're hiring! Join Ausprey IoT's growing team of IoT engineers, software developers, and embedded systems experts. View open roles and apply today.",
   keywords: ['IoT jobs', 'software developer jobs', 'embedded systems engineer', 'Auspre careers'],
   path: '/careers',
 })

@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 export const metadata: Metadata = buildMeta({
   title: 'Contact Us — Hire IoT Developers & Get a Quote',
   description:
-    'Get in touch with Auspre IoT. Hire expert IoT developers, request a custom software quote, or book a free 30-minute IoT consulting call. Response within 24 hours.',
+    'Get in touch with Ausprey IoT. Hire expert IoT developers, request a custom software quote, or book a free 30-minute IoT consulting call. Response within 24 hours.',
   keywords: ['hire IoT developers', 'IoT consulting', 'software development quote', 'contact Auspre'],
   path: '/contact',
 })

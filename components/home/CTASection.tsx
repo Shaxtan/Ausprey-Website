@@ -119,7 +119,7 @@ export default function CTASection() {
         >
           {[
             { num: '100+', label: 'Happy Clients' },
-            { num: '250+', label: 'Projects Shipped' },
+            { num: '30+', label: 'Projects Shipped' },
             { num: '12+', label: 'Years Experience' },
             { num: '20+', label: 'Countries Served' },
           ].map((s) => (

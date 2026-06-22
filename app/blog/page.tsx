@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 export const metadata: Metadata = buildMeta({
   title: 'IoT & Software Development Blog',
   description:
-    'Insights, tutorials, and case studies on IoT development, embedded systems, cloud architecture, and software engineering from the Auspre IoT team.',
+    'Insights, tutorials, and case studies on IoT development, embedded systems, cloud architecture, and software engineering from the Ausprey IoT team.',
   keywords: ['IoT blog', 'IoT development insights', 'embedded systems tutorials', 'software engineering articles'],
   path: '/blog',
 })

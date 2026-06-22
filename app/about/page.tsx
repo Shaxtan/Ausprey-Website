@@ -3,9 +3,9 @@ import { buildMeta } from '@/lib/metadata'
 import CTASection from '@/components/home/CTASection'
 
 export const metadata: Metadata = buildMeta({
-  title: 'About Us — Auspre IoT Technology Partner',
+  title: 'About Us — Ausprey IoT Technology Partner',
   description:
-    'Meet the Auspre IoT team. 12+ years of experience building custom IoT and software solutions for businesses worldwide. Our engineers, designers, and strategists drive innovation.',
+    'Meet the Ausprey IoT team. 12+ years of experience building custom IoT and software solutions for businesses worldwide. Our engineers, designers, and strategists drive innovation.',
   keywords: ['IoT company', 'software development team', 'Auspre technologies', 'about Auspre'],
   path: '/about',
 })
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <span className="gradient-text-red-gold">A Technology Partner.</span>
           </h1>
           <p className="text-lg text-gray-text leading-relaxed">
-            Founded in 2018, Auspre IoT has grown from a small embedded systems consultancy into a
+            Founded in 2018, Ausprey IoT has grown from a small embedded systems consultancy into a
             full-service IoT and software development company with 50+ engineers serving clients
             across 20+ countries. We believe technology should ignite possibilities, not create
             complexity.

@@ -9,7 +9,7 @@ import { testimonialCard } from '@/lib/animations'
 const TESTIMONIALS = [
   {
     quote:
-      'Auspre IoT transformed our factory floor with their Industrial IoT platform. Real-time sensor data and predictive maintenance alerts cut our downtime by 42%.',
+      'Ausprey IoT transformed our factory floor with their Industrial IoT platform. Real-time sensor data and predictive maintenance alerts cut our downtime by 42%.',
     name: 'Rajesh Kumar',
     title: 'VP Operations',
     company: 'ManuTech Industries',

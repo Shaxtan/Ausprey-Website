@@ -6,7 +6,7 @@ import CTASection from '@/components/home/CTASection'
 export const metadata: Metadata = buildMeta({
   title: 'Technologies — Our Full IoT & Software Stack',
   description:
-    'Explore the full technology stack Auspre IoT uses: React, Next.js, AWS, Azure, ESP32, FreeRTOS, MQTT, Docker, TensorFlow, and more.',
+    'Explore the full technology stack Ausprey IoT uses: React, Next.js, AWS, Azure, ESP32, FreeRTOS, MQTT, Docker, TensorFlow, and more.',
   keywords: ['IoT technology stack', 'embedded systems technologies', 'cloud IoT technologies'],
   path: '/technologies',
 })

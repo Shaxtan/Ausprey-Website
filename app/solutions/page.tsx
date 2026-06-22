@@ -6,7 +6,7 @@ import IoTShowcase from '@/components/home/IoTShowcase'
 export const metadata: Metadata = buildMeta({
   title: 'IoT Solutions — Industrial, Smart Buildings, Healthcare',
   description:
-    'Explore Auspre IoT\'s industry-specific solutions: Industrial IoT for smart manufacturing, intelligent building management, and connected healthcare platforms.',
+    'Explore Ausprey IoT\'s industry-specific solutions: Industrial IoT for smart manufacturing, intelligent building management, and connected healthcare platforms.',
   keywords: ['IoT solutions', 'industrial IoT', 'smart building IoT', 'healthcare IoT'],
   path: '/solutions',
 })
