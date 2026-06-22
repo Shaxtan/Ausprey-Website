@@ -110,6 +110,9 @@ export const metadata: Metadata = {
     images: ['/og-image.jpg'],
     creator: '@auspreiot',
   },
+  icons: {
+    icon: '/images/favicon.png',
+  },
   alternates: { canonical: 'https://www.auspreiot.com' },
   verification: { google: 'YOUR_GOOGLE_VERIFICATION_CODE' },
 }
