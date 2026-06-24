@@ -51,14 +51,14 @@ const barlowCondensed = Barlow_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.auspreiot.com'),
   title: {
-    default: 'Auspre IoT | Igniting Possibilities — Custom IoT & Software Solutions',
-    template: '%s | Auspre IoT',
+    default: 'Ausprey IoT | Igniting Possibilities — Custom IoT & Software Solutions',
+    template: '%s | Ausprey IoT',
   },
   description:
-    'Auspre IoT delivers innovative, custom IoT and software solutions. We help businesses build scalable, secure, and future-ready technology that drives growth. 100+ happy clients, 250+ projects delivered.',
+    'Ausprey IoT delivers innovative, custom IoT and software solutions. We help businesses build scalable, secure, and future-ready technology that drives growth. 20+ happy clients, 30+ projects delivered.',
   keywords: [
     'IoT solutions',
-    'Auspre IoT',
+    'Ausprey IoT',
     'custom software development',
     'IoT development company',
     'industrial IoT',
@@ -73,9 +73,9 @@ export const metadata: Metadata = {
     'IoT integration',
     'software architecture',
   ],
-  authors: [{ name: 'Auspre IoT', url: 'https://www.auspreiot.com' }],
-  creator: 'Auspre IoT',
-  publisher: 'Auspre IoT',
+  authors: [{ name: 'Ausprey IoT', url: 'https://www.auspreiot.com' }],
+  creator: 'Ausprey IoT',
+  publisher: 'Ausprey IoT',
   robots: {
     index: true,
     follow: true,
@@ -91,21 +91,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.auspreiot.com',
-    siteName: 'Auspre IoT',
-    title: 'Auspre IoT | Custom IoT & Software Solutions',
+    siteName: 'Ausprey IoT',
+    title: 'Ausprey IoT | Custom IoT & Software Solutions',
     description: 'Igniting Possibilities through innovative IoT and custom software development.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Auspre IoT — Igniting Possibilities',
+        alt: 'Ausprey IoT — Igniting Possibilities',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Auspre IoT | Igniting Possibilities',
+    title: 'Ausprey IoT | Igniting Possibilities',
     description: 'Custom IoT & software solutions for modern businesses.',
     images: ['/og-image.jpg'],
     creator: '@auspreiot',

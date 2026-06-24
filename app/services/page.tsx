@@ -6,7 +6,7 @@ import CTASection from '@/components/home/CTASection'
 export const metadata: Metadata = buildMeta({
   title: 'IoT & Software Development Services',
   description:
-    'Explore Auspre IoT\'s comprehensive service catalogue: custom IoT development, embedded systems, cloud platforms, cybersecurity, AI/ML integration, and enterprise software solutions.',
+    'Explore Ausprey IoT\'s comprehensive service catalogue: custom IoT development, embedded systems, cloud platforms, cybersecurity, AI/ML integration, and enterprise software solutions.',
   keywords: ['IoT development services', 'embedded systems development', 'cloud IoT', 'custom software services'],
   path: '/services',
 })

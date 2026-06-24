@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 import { FaLinkedin, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa'
+import logo from '../../public/images/main-logo.png'
 
 const SERVICES = [
   { label: 'Custom IoT Development', href: '/services/custom-iot' },
@@ -27,29 +29,32 @@ const SOCIAL = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white " role="contentinfo">
-<div className="container-max !pt-20 !pb-10">
+    <footer className="bg-[#111111] text-white" role="contentinfo">
+      <div className="container-max !pt-20 !pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
           {/* Col 1: Branding */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-3 group w-fit">
-              <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="22" cy="22" r="22" fill="rgba(255,255,255,0.08)" />
-                <path d="M22 8 C16 12, 10 16, 12 24 C14 30, 20 34, 22 36 C24 34, 30 30, 32 24 C34 16, 28 12, 22 8Z" fill="url(#eagleGradFooter)" opacity="0.9" />
-                <path d="M22 10 L14 20 L22 18 L30 20 Z" fill="#D4A017" opacity="0.8" />
-                <defs>
-                  <linearGradient id="eagleGradFooter" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#C0392B" />
-                    <stop offset="100%" stopColor="#D4A017" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              <Image
+                src={logo}
+                alt="Auspre logo"
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+              />
               <div className="flex flex-col leading-tight">
-                <span className="text-xl font-bold text-white" style={{ fontFamily: 'var(--font-display)' }}>
-                  auspre
+                <span
+                  className="text-xl font-bold text-white"
+                  style={{ fontFamily: 'var(--font-display)' }}
+                >
+                  ausprey
                 </span>
-                <span className="text-[9px] font-semibold tracking-[0.2em] uppercase" style={{ color: 'var(--color-gold-light)' }}>
+                <span
+                  className="text-[9px] font-semibold tracking-[0.2em] uppercase"
+                  style={{ color: 'var(--color-gold-light)' }}
+                >
                   Igniting Possibilities
                 </span>
               </div>
@@ -61,7 +66,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-4">
               {SOCIAL.map(({ icon: Icon, href, label }) => (
-  <a
+                <a
                   key={label}
                   href={href}
                   target="_blank"
@@ -77,7 +82,10 @@ export default function Footer() {
 
           {/* Col 2: Services */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3
+              className="font-semibold text-sm uppercase tracking-widest mb-6"
+              style={{ color: 'var(--color-gold-light)' }}
+            >
               Services
             </h3>
             <ul className="space-y-3">
@@ -97,7 +105,10 @@ export default function Footer() {
 
           {/* Col 3: Company */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3
+              className="font-semibold text-sm uppercase tracking-widest mb-6"
+              style={{ color: 'var(--color-gold-light)' }}
+            >
               Company
             </h3>
             <ul className="space-y-3">
@@ -110,7 +121,10 @@ export default function Footer() {
                     <span className="w-0 group-hover:w-3 overflow-hidden transition-all duration-200 text-primary">→</span>
                     {c.label}
                     {c.badge && (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: 'var(--color-gold)', color: '#111' }}>
+                      <span
+                        className="text-[10px] font-bold px-2 py-0.5 rounded-full"
+                        style={{ background: 'var(--color-gold)', color: '#111' }}
+                      >
                         {c.badge}
                       </span>
                     )}
@@ -122,24 +136,29 @@ export default function Footer() {
 
           {/* Col 4: Contact */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-widest mb-6" style={{ color: 'var(--color-gold-light)' }}>
+            <h3
+              className="font-semibold text-sm uppercase tracking-widest mb-6"
+              style={{ color: 'var(--color-gold-light)' }}
+            >
               Contact
             </h3>
             <address className="not-italic space-y-4">
               <a
-                href="ausprey@iot.com"
+                href="mailto:ausprey@iot.com"
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors group"
-            >
+              >
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                ausprey@iot.com
+                <span>ausprey@iot.com</span>
               </a>
+
               <a
-                href="tel:+1xxxxxxxxxx"
+                href="tel:+919758057500"
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors"
               >
                 <Phone size={16} className="text-primary flex-shrink-0" />
                 +91 97580 57500
               </a>
+
               <p className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin size={16} className="text-primary flex-shrink-0 mt-0.5" />
                 Gurgaon, India
@@ -172,7 +191,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-max py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © 2024 Auspre IoT. All rights reserved.
+            © 2024 Ausprey IoT. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {[
