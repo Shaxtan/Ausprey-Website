@@ -148,7 +148,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors group"
               >
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                <span>ausprey@iot.com</span>
+                <span>info@auspreytech.com</span>
               </a>
 
               <a
@@ -156,7 +156,7 @@ export default function Footer() {
                 className="flex items-center gap-3 text-gray-400 text-sm hover:text-white transition-colors"
               >
                 <Phone size={16} className="text-primary flex-shrink-0" />
-                +91 97580 57500
+                +91-124-5057262
               </a>
 
               <p className="flex items-start gap-3 text-gray-400 text-sm">
