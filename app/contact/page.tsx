@@ -93,8 +93,8 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="space-y-6">
             {[
-              { icon: Mail, title: 'Email Us', value: 'ausprey@iot.com', href: 'mailto:hello@auspreiot.com' },
-              { icon: Phone, title: 'Call Us', value: '+91 97580 57500', href: 'tel:+1xxxxxxxxxx' },
+              { icon: Mail, title: 'Email Us', value: 'info@auspreytech.com', href: 'mailto:hello@auspreiot.com' },
+              { icon: Phone, title: 'Call Us', value: '+91-124-5057262', href: 'tel:+1xxxxxxxxxx' },
               { icon: MapPin, title: 'Visit Us', value: 'Gurgaon, India', href: '#' },
               { icon: Clock, title: 'Response Time', value: 'Within 24 hours', href: null },
             ].map(({ icon: Icon, title, value, href }) => (
