@@ -23,7 +23,7 @@ function Quote({ className = '' }: { className?: string }) {
       initial="hidden"
       animate="visible"
       className={`flex gap-3 ${className}`}
-      style={{ maxWidth: '230px' }}
+      style={{ maxWidth: 'none', width: 'max-content' }}
     >
       <span
         className="select-none"
@@ -39,10 +39,10 @@ function Quote({ className = '' }: { className?: string }) {
         &ldquo;
       </span>
       <blockquote style={{ borderLeft: '2px solid var(--color-gold-light)', paddingLeft: '14px' }}>
-        <p style={{ fontSize: '17px', lineHeight: 1.4, fontWeight: 600, color: '#1a1a1a', textShadow: '0 1px 12px rgba(255,255,255,0.95)' }}>
+        <p style={{ fontSize: '17px', lineHeight: 1.4, fontWeight: 600, color: '#1a1a1a', textShadow: '0 1px 12px rgba(255,255,255,0.95)', whiteSpace: 'nowrap' }}>
           Small choices today.
         </p>
-        <p style={{ fontSize: '19px', lineHeight: 1.4, fontWeight: 800, color: 'var(--color-primary)', textShadow: '0 1px 12px rgba(255,255,255,0.95)' }}>
+        <p style={{ fontSize: '19px', lineHeight: 1.4, fontWeight: 800, color: 'var(--color-primary)', textShadow: '0 1px 12px rgba(255,255,255,0.95)', whiteSpace: 'nowrap' }}>
           Big impact tomorrow.
         </p>
       </blockquote>
